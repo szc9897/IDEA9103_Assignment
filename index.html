@@ -55,6 +55,37 @@
         <p>I will show you the quiz from the first week below.</p>
       </div>
     </div>
+    <div class="flex-container">
+        <div class="flex-item">
+          <h2>week 1 quiz</h2>
+          <p>This is the pattern I designed in the first week of quiz</p>
+          <div class="svg-container">
+            <svg id="my-svg" viewBox="0 0 500 500">
+              <circle cx="250" cy="250" r="200" fill="burlywood" />
+              <circle cx="180" cy="150" r="40" fill="rgb(255, 255, 255)" />
+              <circle cx="320" cy="150" r="40" fill="rgb(255, 255, 255)" />
+              <circle cx="180" cy="150" r="20" fill="rgb(0, 0, 0)" />
+              <circle cx="320" cy="150" r="20" fill="rgb(0, 0, 0)" />
+              <circle cx="250" cy="300" r="80" fill="rgb(249, 138, 138)" />
+              <rect x="160" y="200" width="200" height="100" fill="burlywood" />
+              <rect x="220" y="300" width="60" height="30" fill="rgb(255, 255, 255)" />
+              <line x1="140" y1="120" x2="220" y2="110" stroke="black" />
+              <line x1="360" y1="120" x2="280" y2="110" stroke="black" />
+            </svg>
+            </div>
+            </div>
+            
+              </div>
+              <script>
+                function adjustLayout() {
+                  const svg = document.getElementById('my-svg');
+                  const svgContainer = document.querySelector('.svg-container');
+                  const containerWidth = svgContainer.clientWidth;
+                  svg.setAttribute('width', containerWidth);
+                }
+                window.addEventListener('resize', adjustLayout);
+                adjustLayout();
+              </script>
 
 </body>
 </html>
